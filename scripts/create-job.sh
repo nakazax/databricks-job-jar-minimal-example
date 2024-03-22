@@ -1,7 +1,8 @@
 #!/bin/bash
 
-if [ -z "$1" ] || [ -z "$2" ]; then
-  echo -e "Usage: $0 <jar_path>"
+if [ -z "$1" ]; then
+  echo "Error: jar_path is required."
+  echo "Usage: $0 <jar_path>"
   exit 1
 fi
 
